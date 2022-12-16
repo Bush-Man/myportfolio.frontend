@@ -1,0 +1,23 @@
+
+.rightSide{
+    flex:1;
+    padding-left: 1rem;
+}
+.rightSide input{
+    max-width:90%;
+    margin-bottom:5px;
+    height:2rem;
+    padding:5px;
+    outline:none;
+}
+.rightButton{
+    
+    margin:7px 0px;
+    width:6rem;
+    padding:5px;
+    border:none;
+    background:green;
+    border-radius: 5px;
+    color: white;
+    
+}

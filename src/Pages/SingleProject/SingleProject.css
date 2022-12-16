@@ -1,0 +1,60 @@
+.singleProject{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding-top:3rem;
+    padding:2rem 6rem;
+
+}
+.singleProject:hover{
+    cursor: pointer;
+}
+.sinprojImg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sinprojImg>img{
+    width:50%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 5px;
+    align-self: center;
+    
+}
+.sinprojTime{
+    display:flex;
+    align-items: center;
+    display:flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.buttons{
+    margin: 1rem 0rem;
+}
+.btn{
+    margin-right: 1rem;
+    padding:5px 20px;
+   
+    border:none;
+    border-radius:5px ;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .singleProject{
+    padding: 2rem ;
+
+    
+  }
+  .sinprojImg>img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px 0px;
+    border-radius: 5px;
+    align-self: center;
+    
+}
+}
