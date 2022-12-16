@@ -14,7 +14,7 @@ function App() {
   
   const { dark } = useContext(Context);
   const { user } = useContext(Context);
-  const publicUrl = "https://myportfoliotry.onrender.com";
+  
   
  
   return (
@@ -23,7 +23,7 @@ function App() {
       <Router >
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path= "publicUrl/start" element={<Login />} />
+          <Route path= "https://myportfoliotry.onrender.com/start" element={<Login />} />
           <Route path="/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
           {user?.isAdmin &&
