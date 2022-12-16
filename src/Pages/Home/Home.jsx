@@ -13,7 +13,7 @@ const Home = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const getProjects = async () => {
-      const res = await axios.get("/projects/");
+      const res = await axios.get("https://server-ujbx.onrender.com/api/v1/projects");
       setProjects(res.data);
         console.log(res.data)
     }
