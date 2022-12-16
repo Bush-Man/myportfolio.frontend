@@ -24,14 +24,14 @@ const Update = () => {
             post.append("file", file);
             newProject.image = filename;
             try { 
-                await userRequest.post("/api/v1/new", post);
+                await userRequest.post("https://server-ujbx.onrender.com/api/v1/new", post);
                 
       } catch (err) {
                 throw (err);
       }
         }
         
-        await userRequest.put(`/api/v1/update/${projId}`, newProject);
+        await userRequest.put(`https://server-ujbx.onrender.com/api/v1/update/${projId}`, newProject);
         
         navigate("/", { replace: true });
         
