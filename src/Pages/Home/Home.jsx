@@ -13,7 +13,7 @@ const Home = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const getProjects = async () => {
-      const res = await axios.get("/api/v1/projects/");
+      const res = await axios.get("/projects/");
       setProjects(res.data);
         console.log(res.data)
     }
