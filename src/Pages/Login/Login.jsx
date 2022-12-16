@@ -13,7 +13,7 @@ const Login = () => {
         dispatch({
           type:"LOGIN_START"
         })
-        const res = await axios.post("/api/v1/auth/mainlogin", { username, password });
+        const res = await axios.post("https://server-ujbx.onrender.com/api/v1/auth/mainlogin", { username, password });
         dispatch({
           type: "LOGIN_SUCCESS",
           payload: res.data
