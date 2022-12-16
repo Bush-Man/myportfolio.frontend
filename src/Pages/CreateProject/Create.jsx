@@ -20,12 +20,12 @@ const [file, setFile] = useState(null);
       data.append("file", file);
       newPost.image = filename;
       try { 
-        await userRequest.post("/api/v1/upload",data)
+        await userRequest.post("https://server-ujbx.onrender.com/api/v1/upload",data)
       } catch (err) {
         console.log(err);
       }
     }
-    userRequest.post("/api/v1/create/new", newPost);
+    userRequest.post("https://server-ujbx.onrender.com/api/v1/create/new", newPost);
     navigate("/",{replace:true})
   }
   
