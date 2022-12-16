@@ -24,7 +24,7 @@ const Singleproject = () => {
     
     const deleteProject = async (e) => {
         e.preventDefault();
-        await userRequest.delete(`/api/v1/remove/${projectId}`);
+        await userRequest.delete(`https://server-ujbx.onrender.com/api/v1/remove/${projectId}`);
          navigate('/',{replace:true});
         
         }
@@ -37,7 +37,7 @@ const Singleproject = () => {
     //fetch project by id 
     useEffect(() => {
         const fetchProject = async () => {
-            const res = await axios.get(`/api/v1/project/${projectId}`);
+            const res = await axios.get(`https://server-ujbx.onrender.com/api/v1/project/${projectId}`);
             setProject(res.data);
             console.log(res.data);
         }
