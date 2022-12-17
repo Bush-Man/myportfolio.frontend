@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path= "https://myportfoliotry.onrender.com/start" element={<Login />} />
-          <Route path="/project/:id" element={<Singleproject />} />
+          <Route path="https://myportfoliotry.onrender.com/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
           {user?.isAdmin &&
             <>
