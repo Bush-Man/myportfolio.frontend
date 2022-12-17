@@ -3,6 +3,7 @@ import RightSide from '../../Components/RightSide/RightSide.jsx';
 import CenterSide from '../../Components/CenterSide/Center.jsx';
 import { useEffect,useState } from "react";
 import axios from "axios";
+import{useNavigate}from "react-router-dom";
 import Facebook from "../../images/facebook.png";
 import Twitter from "../../images/twitter.png";
 import Instagram from "../../images/instagram.png";
@@ -19,6 +20,12 @@ const Home = () => {
     }
     getProjects();
   },[]);
+  
+  const navigate = useNavigate();
+  //navigation to home page
+    const handleNavigation = () => {
+        navigate('/start',{replace:true});
+    }
   return (
     
       
@@ -39,7 +46,8 @@ const Home = () => {
               <hr style={{width:80,marginBottom:4}} />
               <p>
                 <span style={{fontSize:25}}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa omnis iste reprehenderit nihil culpa animi voluptatem blanditiis corrupti, labore suscipit earum voluptates optio ex repellat voluptatum, magnam magni soluta.
-              </p>
+              </p>  
+             <button onClick={handleNavigation}> login </button>
             </div>
               
           </div>
