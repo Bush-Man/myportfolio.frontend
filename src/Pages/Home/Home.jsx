@@ -32,7 +32,9 @@ const Home = () => {
           <div className="Home">
         <div className="profileSide">
           <div className="profileCard">
+           <button onClick={handleNavigation}> login </button>
             <div className="profImages">
+                 
                 <img className="coverImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8PBlksM5ycqP8YRhDcsl853_G5tcwZKt5AS8yGJoIw&s" alt="" />
                 <img className="profImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSqts8X18zypMacdVpsMo5GDHpet_qGAtSQCnzJfnGA&s" alt=""  />
             </div>
@@ -47,7 +49,7 @@ const Home = () => {
               <p>
                 <span style={{fontSize:25}}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa omnis iste reprehenderit nihil culpa animi voluptatem blanditiis corrupti, labore suscipit earum voluptates optio ex repellat voluptatum, magnam magni soluta.
               </p>  
-             <button onClick={handleNavigation}> login </button>
+            
             </div>
               
           </div>
