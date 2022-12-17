@@ -28,7 +28,7 @@ function App() {
           <Route path= "/start" element={<Login />} />
           <Route path="/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
-         {*user?.isAdmin &&
+         {user?.isAdmin &&
             <>
              <Route path="/" element={<Home />}/>
              <Route path="/create" element={<Create />} /> :
