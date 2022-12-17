@@ -28,7 +28,13 @@ const Singleproject = () => {
          navigate('/',{replace:true});
         
         }
+    //Navigate to new Project page
+    const createProject = async () => {
         
+        
+         navigate('/create',{replace:true});
+        
+        }
     
     //navigation to home page
     const handleNavigation = () => {
@@ -82,6 +88,7 @@ const Singleproject = () => {
                       isAdmin &&<>
                     <button className="btn btnDelete" style={{background:"red"}} onClick={deleteProject}>DELETE</button>
                      <button className="btn btnUpdate" style={{background:"green"}} onClick={updateProject}>UPDATE</button>
+                     <button className="btn btnCreate" style={{background:"orange"}} onClick={createProject}>CREATE</button>
                       </> 
             }
 
