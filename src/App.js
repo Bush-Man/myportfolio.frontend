@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter , Routes, Route ,Navigate} from "react-router-dom";
+import { BrowserRouter , Routes, Route} from "react-router-dom";
 
 import Home from './Pages/Home/Home.jsx';
 import { useContext} from "react";
@@ -22,11 +22,11 @@ function App() {
       
       <BrowserRouter >
         <Routes>
-          <Route exact path="/" element={<Home />}>
+          <Route exact path="/" element={<Home />}/>
           <Route path= "/start" element={<Login />} />
           <Route path="/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
-          </Route>
+         
           {user?.isAdmin &&
             <>
              <Route path="/" element={<Home />}/>
