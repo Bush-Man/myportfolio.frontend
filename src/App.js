@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter >
         <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route path= "/start" element={<Login />} />
+          <Route path= "/start" element={user?<Home/>:<Login />} />
           <Route path="/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
          {user?.isAdmin &&
