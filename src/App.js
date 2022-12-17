@@ -22,10 +22,10 @@ function App() {
       
       <BrowserRouter >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path= "/start" element={<Login />} />
-          <Route path="/project/:id" element={<Singleproject />} />
-          <Route path = "*" element={<Notfound />}/>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path= "/start" element={<Login />} />
+          <Route exact path="/project/:id" element={<Singleproject />} />
+          <Route exact path = "*" element={<Notfound />}/>
           {user?.isAdmin &&
             <>
              <Route path="/" element={<Home />}/>
