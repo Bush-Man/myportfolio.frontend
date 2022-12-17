@@ -6,14 +6,23 @@ import Home from './Pages/Home/Home.jsx';
 import { useContext} from "react";
 import Login from "./Pages/Login/Login.jsx";
 import {Context} from"./ContextApi/Context.js"
-import Create from './Pages/CreateProject/Create';
+//import Create from './Pages/CreateProject/Create';
 import Singleproject from './Pages/SingleProject/Singleproject';
-import Update from './Pages/UpdatePage/Update';
+//import Update from './Pages/UpdatePage/Update';
 import Notfound from "./Pages/NotFound/Notfound.jsx";
+
+{/*user?.isAdmin &&
+            <>
+             <Route path="/" element={<Home />}/>
+             <Route path="/create" element={<Create />} /> :
+             <Route path="/project/update/:id" element={<Update />} />
+            </>
+              
+          */}
 function App() {
   
   const { dark } = useContext(Context);
-  const { user } = useContext(Context);
+  //const { user } = useContext(Context);
   
   
  
@@ -27,16 +36,7 @@ function App() {
           <Route path="/project/:id" element={<Singleproject />} />
           <Route path = "*" element={<Notfound />}/>
          
-          {user?.isAdmin &&
-            <>
-             <Route path="/" element={<Home />}/>
-             <Route path="/create" element={<Create />} /> :
-             <Route path="/project/update/:id" element={<Update />} />
-            </>
-              
-          }
-          
-          
+         
         </Routes>
 
       </BrowserRouter>
