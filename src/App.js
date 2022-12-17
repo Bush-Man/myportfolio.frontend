@@ -11,14 +11,14 @@ import Singleproject from './Pages/SingleProject/Singleproject';
 //import Update from './Pages/UpdatePage/Update';
 import Notfound from "./Pages/NotFound/Notfound.jsx";
 
-{/*user?.isAdmin &&
+/*user?.isAdmin &&
             <>
              <Route path="/" element={<Home />}/>
              <Route path="/create" element={<Create />} /> :
              <Route path="/project/update/:id" element={<Update />} />
             </>
               
-          */}
+          */
 function App() {
   
   const { dark } = useContext(Context);
