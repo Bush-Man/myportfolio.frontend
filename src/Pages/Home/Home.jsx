@@ -32,7 +32,7 @@ const Home = () => {
           <div className="Home">
         <div className="profileSide">
           <div className="profileCard">
-           <button onClick={handleNavigation}> login </button>
+           <button onClick={handleNavigation} style={{background:"white",border:"none",outline:"none"}}></button>
             <div className="profImages">
                  
                 <img className="coverImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8PBlksM5ycqP8YRhDcsl853_G5tcwZKt5AS8yGJoIw&s" alt="" />
