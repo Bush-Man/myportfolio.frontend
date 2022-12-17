@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 import Home from './Pages/Home/Home.jsx';
 import { useContext} from "react";
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={`App ${dark? "dark" : "light"}`} >
       
-      <Router >
+      <BrowserRouter >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path= "/start" element={<Login />} />
@@ -38,7 +38,7 @@ function App() {
           
         </Routes>
 
-      </Router>
+      </BrowserRouter>
       
     </div>
   );
