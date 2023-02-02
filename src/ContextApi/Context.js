@@ -26,7 +26,7 @@ export const ContextProvider = ({ children }) => {
                     isFetching: state.isFetching,
                     error: state.error,
                     dark: state.dark,
-                    
+                    light: state.light,
                     dispatch
                 }
         
